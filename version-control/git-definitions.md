@@ -14,3 +14,5 @@ Commit add changes into the repository. A good commit message is short and preci
 
 * What is a merge conflict?
 merge conflict occurs in Git when two people change the same line in the same file or if one person decide to modify it while another decide to delete it, Git cannot know what is correct. 
+
+### Making a doesn't matter change to git-definitions.md
