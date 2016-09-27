@@ -1,3 +1,8 @@
+body {
+  max-width: 960px;
+  min-width: 235px;
+}
+
 main, #external-links {
   display: inline-block;
   vertical-align: text-top;
@@ -5,14 +10,16 @@ main, #external-links {
 }
 
 main {
-  width: 756px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 75%;
   margin-right: 0px;
 }
 
 #external-links{
   display: inline-block;
   vertical-align: text-top;
-  width: 200px;
+  width: 20%;
   margin-left: 0px;
 }
 
