@@ -1,10 +1,19 @@
-body {
-  width: 960px;
+main, #external-links {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 100%;
 }
 
-#external-links {
+main {
+  width: 756px;
+  margin-right: 0px;
+}
+
+#external-links{
+  display: inline-block;
+  vertical-align: text-top;
   width: 200px;
-  
+  margin-left: 0px;
 }
 
 blockquote {
