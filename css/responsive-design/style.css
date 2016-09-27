@@ -1,6 +1,7 @@
 body {
   max-width: 960px;
   min-width: 235px;
+  margin: 0 auto;
 }
 
 main, #external-links {
