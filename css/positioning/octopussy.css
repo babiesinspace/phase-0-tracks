@@ -12,9 +12,9 @@
   width: 277px;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
+  left: 25px;
   right: 0;
-  top: 50px;
+  top: 15px;
 }
 #glasses{
   position: absolute;
@@ -23,5 +23,5 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 250px;
+  top: 210px;
 }
