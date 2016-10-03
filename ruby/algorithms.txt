@@ -1,0 +1,70 @@
+Using an elevator:
+
+- Locate Elevator Foyer
+- Locate Elevator Doorway
+- Search the wall near elevator doorway to until closest control panel is located
+- Inspect control panel
+- Locate button options on control panel
+- IF there is only ONE button, push button
+- ELSIF there are two buttons, push the button which corresponds to the direction desired to travel along the building's vertical axis
+- Inspect button
+-    IF button lights up, wait patiently 
+-    ELSIF inspect nearby control panels for corresponding button light-up
+-       IF corresponding button on different control panel lights up, wait patiently
+-       ELSE repeat push button UNTIL button lights up, up to 10 times
+-    IF button STILL does not light up, pace elevator foyer impatiently for 2 minutes, OPTION to complain loudly
+-    IF there are multiple elevator doorways, locate the arrow indicators near doorway which mirror the buttons on control panel, else locate the indicators which say "up" or "down"
+-    IF the doorway opens, and indicator matches control-panel selection (symbol == symbol or string indicates specified symbol) walk through doorway
+-    ELSE continue waiting patiently UNTIL elevator indicates it is traveling the selected direction along vertical axis, then walk through doorway
+-    Enter elevator through doorway
+-    Face doorway
+-    Locate Floor Selector Control Panel
+-    Locate Button which corresponds to desired floor
+-    Push Button
+-    Wait for elevator doors to close, IF elevator doors do not close, ensure there is no doorway obstruction. ELSIF forcefully push button for 'door close' or corresponding symbol. Repeat UNTIL doors close
+-    Wait awkwardly while traveling along vertical axis
+-    Inspect elevator
+-    Locate Floor Indicator
+-    When elevator indicates you have arrived at desired floor, exit elevator through open doorway.
+
+Making Coffee:
+
+- Locate: Coffee maker, Coffee Filters, and Coffee Pot
+- Place items on counter
+- Locate power outlet on wall near counter
+- Plug in Coffee Maker
+- Locate Coffee Maker lid and open
+- Locate Coffee Funnel and water reservoir 
+- Place ONE coffee filter inside coffee funnel, insure filter is open and ready to hold ground coffee
+- Locate coffee pot
+- Inspect coffee pot for water measurements
+- Fill coffee pot with water UNTIL water is level with measurement for desired cups of coffee
+- Pour water from coffee pot into Coffee maker water reservoir
+- Locate coffee container
+- Inspect coffee container for ground coffee
+- Locate coffee scoop within coffee container
+- Scoop ground coffee into coffee filter at a ratio of 1 scoop per desired cup
+- Add extra scoop for luck and sanity
+- Close lid to Coffee Maker
+- Locate Coffee Maker Warming Plate
+- Place Coffee Pot onto Coffee Maker Warming Plate
+- Locate Start Brew Button
+- Push Button
+- Wait impatiently for what seems like an eternity until coffee pot fills with preselected amount of coffee
+- Locate mug and place on counter
+- Pour coffee from pot into mug
+- Locate SUGAR, SPOON, FRESH MILK
+- Place items on counter
+- Using spoon, put sugar in coffee UNTIL desired level of sweetness is met
+- Undo lid to milk
+- Pour milk into coffee until desired color is reached
+- Replace lid and return milk
+- Using spoon, stir coffee until mixture is combined
+- Put spoon in sink and ignore until coffee has been consumed
+- Drink coffee in mug, until finished
+- Repeat until coffee in pot is finished or you are shaking and sweating
+- Rinse coffee pot
+- Unplug Coffee Maker
+- Remove Filter with spend coffee inside and discard
+- Wash mug and spoon
+- Start day
