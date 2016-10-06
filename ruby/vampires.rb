@@ -103,7 +103,16 @@ until employee_count == 0
     puts "Probably not a vampire."
   elsif (!age_in_years && !garlic_good) || !health_conscious
     puts "Probably a vampire"
-  else
+  elsif 
+    until (allergies == "done") || (allergies == "sunshine")
+      puts "Any others? Please enter them one at a time. When you're finished, type 'done'."
+      allergies = gets.chomp
+        if allergies == "sunshine"
+        puts "Probably a vampire"
+        break
+        end
+    end 
+   else
     puts "Results inconclusive"
   end
 
