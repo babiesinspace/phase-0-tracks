@@ -1,9 +1,9 @@
 require_relative 'game'
 
 describe NoHangMan do 
+  let(:game) { NoHangMan.new("hello world") }
 
   it "determines number of allowed misses" do
-    game = NoHangMan.new("hello world") 
     expect(game.allowed_guesses).to eq 3
   end 
 
