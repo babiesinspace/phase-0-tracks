@@ -89,3 +89,21 @@ end
 #=======================================================================
 # Reflection Section
 
+#What are the differences between the two different hash 
+#syntaxes shown in the state_data file?
+
+#Syntactic sugar was used for the state-specific hash, where as a hash rocket was used in the hashy-hash
+#What does require_relative do? How is it different from require?
+# Require relative points to a file through it's relative path vs. relative would uploads a file from an installed area of Ruby (or some downloaded plug-in/attachment)
+#What are some ways to iterate through a hash?
+#You can iterate through each element by key or value
+#When refactoring virus_effects, what stood out to you about the 
+#variables, if anything?
+#It's hard to know when you can assign a variable (and that variables scope) to the return of a method
+#What concept did you most solidify in this challenge?
+#Knowing the areas I probably need more work in.. 
+
+
+
+
+
