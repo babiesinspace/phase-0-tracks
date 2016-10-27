@@ -1,29 +1,36 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Samantha  ].
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
+# the difference between require_relative vs require is that 
+# require_relative allows you access a file using the relative path to the root 
+# and adds a file that's already been installed. 
 #
 #
 require_relative 'state_data'
 
 class VirusPredictor
+  attr_accessor :speed 
 
+# this method its setting the attributes of each new instances of the class
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+# this method runs the predicted_deaths and speed_of_spread methods.
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+   predicted_deaths(@population_density, @population, @state, speed)
   end
 
-  private
+  #private
 
-  def predicted_deaths(population_density, population, state)
+# this method calculates predicted deaths based off population density and
+# population and returns the result
+  def predicted_deaths(population_density, population, state, speed)
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -37,10 +44,11 @@ class VirusPredictor
       number_of_deaths = (@population * 0.05).floor
     end
 
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
+    puts "#{@state} will lose #{number_of_deaths} people in this outbreak and will spread across the state in #{@speed} months.\n\n"
   end
 
+
+# this method calculates how fast the virus spreads based of the population density 
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
@@ -57,10 +65,12 @@ class VirusPredictor
     else
       speed += 2.5
     end
-
-    puts " and will spread across the state in #{speed} months.\n\n"
-
+    
   end
+
+def speed 
+  @speed = speed_of_spread(@population_density, @state)
+end 
 
 end
 
@@ -69,20 +79,31 @@ end
 # DRIVER CODE
  # initialize VirusPredictor for each state
 
+STATE_DATA.each do |state, data|
+  VirusPredictor.new(state, data[:population_density], data[:population]).virus_effects
+end 
 
-alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
 
-jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-jersey.virus_effects
-
-california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-california.virus_effects
-
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
 
 
 #=======================================================================
 # Reflection Section
+
+#What are the differences between the two different hash 
+#syntaxes shown in the state_data file?
+
+#Syntactic sugar was used for the state-specific hash, where as a hash rocket was used in the hashy-hash
+#What does require_relative do? How is it different from require?
+# Require relative points to a file through it's relative path vs. relative would uploads a file from an installed area of Ruby (or some downloaded plug-in/attachment)
+#What are some ways to iterate through a hash?
+#You can iterate through each element by key or value
+#When refactoring virus_effects, what stood out to you about the 
+#variables, if anything?
+#It's hard to know when you can assign a variable (and that variables scope) to the return of a method
+#What concept did you most solidify in this challenge?
+#Knowing the areas I probably need more work in.. 
+
+
+
+
 
