@@ -20,7 +20,8 @@ create_dish_table_cmd = <<-SQL_CMD
     location INT,
     description VARCHAR(255),
     seasonal BOOLEAN,
-    price VARCHAR(255)
+    price VARCHAR(255),
+    FOREIGN KEY(location) REFERENCES restaurant(name)
   )
 SQL_CMD
 
@@ -107,4 +108,3 @@ def restaurant_signup(db)
   end 
 end 
 
-restaurant_signup(db)

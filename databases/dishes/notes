@@ -1,0 +1,32 @@
+db.execute("SELECT (id, name, location) FROM restaurants WHERE (name=?)", [restaurant])
+# Could also be, "WHERE (?)" OR "WHERE ?", [name=restaurant]
+
+db.execute("INSERT INTO dish (location) SELECT id FROM restaurant WHERE name=?", [restaurant]
+
+Adding a dish:
+
+Ask for the name of the restaurant
+search restaurant table names
+
+if restaurant exists:
+  return the name and location
+  
+  db.execute("SELECT (id, name, location) FROM restaurants WHERE (name=?)", [restaurant])
+
+  ask user if this is the place they mean 
+  # IF MULTIPLE RETURNS, HAVE USER SELECT THE ID NUMBER CORRESPONDING TO CORRECT LOCATION
+    if correct use rest. id as dish location:
+      
+      location = db.execute("SELECT (id) FROM restaurants WHERE (name=?)", [restaurant])
+else
+  puts "No restaurant by that name was found, are you sure your info is correct?"
+  p info + "?"
+  ask if input is correct
+    if correct:
+      restaurant is not in table
+      use info to add restaurant to restaurant table
+      use restaurant id as dish location
+      location = patron_add_rest_info
+
+
+
