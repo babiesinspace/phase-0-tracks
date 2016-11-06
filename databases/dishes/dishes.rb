@@ -85,4 +85,26 @@ def patron_signup(db)
   end 
 end
 
-patron_signup(db)
+def restaurant_signup(db)
+  info_correct = false 
+  until info_correct
+    puts "Do you want to improve understanding with your customer base?\nNot sure your staff is adequately selling your specials?\nWant to know what's selling, and what people are saying about it?\nWondering if you should put that new special on the regular menu?\nSave time and turnover by including a more detailed description, an ingredient list, or even a nutrition   estimator!\nShare new specials or seasonal dishes from your page, straight  to your customers timeline!\nFor a small fee, we'll even send you your market data! Use it to find out if that new Chef de Cuisine is working out, what you sell (and should stock) the most of during what season, what could be perhaps phased out.\nSign up today! Start a conversation with your  customers, and listen to them dish about it.\nWhat's the name of your restaurant?"
+    rest_name = gets.chomp!
+    puts "Please enter the address"
+    rest_address = gets.chomp!
+    puts "Phone number?"
+    rest_phone = gets.chomp!
+    puts "Email?"
+    rest_email = gets.chomp!
+    puts "Please enter a short tagline/motto/descriptor for your place"
+    rest_comments = gets.chomp!
+    puts "#{rest_name}\n#{rest_address}\n#{rest_phone}\n#{rest_email}\n#{rest_comments}\nIs this correct?"
+    correct = gets.chomp!
+    if correct == "yes"
+      create_restaurant(db, rest_name, rest_address, rest_phone, rest_email, rest_comments) 
+      info_correct = true 
+    end 
+  end 
+end 
+
+restaurant_signup(db)
