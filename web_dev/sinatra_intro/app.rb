@@ -44,3 +44,27 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+# write a contact route for an address
+get '/contact' do
+  "Woodwork Brooklyn<br>583 Vanderbilt Ave <br>Brooklyn, NY<br>11238"
+end
+
+get '/great_job' do
+  name = params[:name]
+  if name 
+    "Good job, #{params[:name]}!"
+  else
+    "Good job!"
+  end 
+end 
+
+get '/:num1/plus/:num2' do
+  num3 = params[:num1].to_i + params[:num2].to_i
+  "#{params[:num1]} + #{params[:num2]} = #{num3}"
+end 
+
+get '/students/:age' do
+  students = db.execute("SELECT * FROM students WHERE age=?", [params[:age]])
+end
+#last bit not working for some reason..
